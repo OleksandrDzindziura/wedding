@@ -78,11 +78,16 @@ function RsvpForm() {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    // Тут можна підключити Formspree, EmailJS або Netlify Forms
-    // Поки просто показуємо success
-    console.log('RSVP:', form)
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbzCB9XHlgOMZRurUI4qR28t7Htx8OVIFM7NIjKQnONAH-Xk5Rtl4-YjE_nGFRTA96IrtA/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+    } catch (_) {}
     setSubmitted(true)
   }
 

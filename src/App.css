@@ -212,6 +212,12 @@
   margin: 0 auto;
 }
 
+.rings-icon {
+  font-size: 36px;
+  margin: 8px 0 4px;
+  letter-spacing: -8px;
+}
+
 .details-heart {
   font-size: 28px;
   color: var(--gold);

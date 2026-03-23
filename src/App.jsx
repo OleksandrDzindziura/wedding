@@ -152,10 +152,19 @@ export default function App() {
       {/* ── Countdown ── */}
       <Countdown date={WEDDING.date} />
 
-      {/* ── Our Story ── */}
+      {/* ── Our Day ── */}
       <div className="section">
-        <p className="section-label">Наша історія</p>
-        <h2>Як все починалося</h2>
+        <p className="section-label">Наш день</p>
+        <h2>5 червня 2026</h2>
+        <div className="rings-icon">
+          <svg width="80" height="44" viewBox="0 0 80 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28" cy="22" r="18" stroke="#c9a96e" strokeWidth="3" fill="none"/>
+            <circle cx="52" cy="22" r="18" stroke="#c9a96e" strokeWidth="3" fill="none"
+              style={{clipPath: 'none'}}/>
+            {/* overlap mask — права частина лівого кільця перекриває ліву частину правого */}
+            <path d="M40 6.2 A18 18 0 0 1 40 37.8" stroke="#faf7f2" strokeWidth="4" fill="none"/>
+          </svg>
+        </div>
         <div className="gold-divider" />
         <p>
           Щиро запрошуємо вас розділити з нами найважливіший день у нашому житті.

@@ -14,7 +14,7 @@ const WEDDING = {
   venue: 'FoREST Park',
   address: 'Урочище Ланок, 1, Пониковиця',
   mapsUrl: 'https://maps.google.com/?q=Урочище+Ланок+1+Пониковиця',
-  rsvpDeadline: '25 травня',
+  rsvpDeadline: '5 травня',
   phone: '+380 XX XXX XX XX',
 }
 
@@ -236,7 +236,9 @@ export default function App() {
         <div className="detail-card">
           <div className="detail-icon">📞</div>
           <h3>Контакт</h3>
-          <p>Будь-які питання:<br />{WEDDING.phone}</p>
+          <p>Будь-які питання:</p>
+          <p>Валентин: <a href="tel:+380989722925" style={{color:'var(--gold)', textDecoration:'none'}}>098 972 29 25</a></p>
+          <p>Надія: <a href="tel:+380637138805" style={{color:'var(--gold)', textDecoration:'none'}}>063 713 88 05</a></p>
         </div>
       </div>
 

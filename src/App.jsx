@@ -222,7 +222,7 @@ export default function App() {
         <div className="detail-card">
           <div className="detail-icon">👗</div>
           <h3>Дрес-код</h3>
-          <p>Урочистий одяг<br />Кольори: пастельні тони</p>
+          <p>Урочистий одяг</p>
         </div>
         <div className="detail-card">
           <div className="detail-icon">📞</div>

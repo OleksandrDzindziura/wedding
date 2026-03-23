@@ -109,10 +109,9 @@ function RsvpForm() {
         required
       />
       <select name="guests" value={form.guests} onChange={handleChange}>
-        <option value="1">1 гість</option>
-        <option value="2">2 гостя</option>
-        <option value="3">3 гостя</option>
-        <option value="4">4 гостя</option>
+        {Array.from({ length: 10 }, (_, i) => i + 1).map(n => (
+          <option key={n} value={n}>{n} {n === 1 ? 'гість' : n < 5 ? 'гостя' : 'гостей'}</option>
+        ))}
       </select>
       <input
         name="dietary"

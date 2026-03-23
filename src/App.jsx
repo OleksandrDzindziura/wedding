@@ -3,8 +3,8 @@ import './App.css'
 
 // ── CONFIG — змініть ці дані на свої ──
 const WEDDING = {
-  bride: 'Надія',
-  groom: 'Валентин',
+  bride: 'Валентин',
+  groom: 'Надія',
   date: '2026-06-05', // YYYY-MM-DD
   dateDisplay: '5 червня 2026',
   churchTime: '11:30',
@@ -242,7 +242,7 @@ export default function App() {
           <h3>Контакт</h3>
           <p>Будь-які питання:</p>
           <p>Валентин: <a href="tel:+380989722925" style={{color:'var(--gold)', textDecoration:'none'}}>098 972 29 25</a></p>
-          <p>Надія: <a href="tel:+380637138805" style={{color:'var(--gold)', textDecoration:'none'}}>063 713 88 05</a></p>
+          <p>Надія:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+380637138805" style={{color:'var(--gold)', textDecoration:'none'}}>063 713 88 05</a></p>
         </div>
       </div>
 
